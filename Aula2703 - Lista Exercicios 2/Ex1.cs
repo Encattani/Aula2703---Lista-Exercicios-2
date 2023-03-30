@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.Design;
 
-namespace Aula2703___Lista_Exercicios_2
+namespace Ex1
 
     //DUPLA: ENRICO E SAMIRA
 {
@@ -18,12 +18,12 @@ namespace Aula2703___Lista_Exercicios_2
                 Console.Write("Digite um número: ");
                 numero = Convert.ToInt32(Console.ReadLine());
 
-                if (numero % 2 == 0) //checando e somando numeros pares
+                if (numero > 0 && numero < 1001 && numero % 2 == 0) //checando e somando numeros pares
                 {
                     numeroPar += numero;
                 }
 
-                else if (numero % 2 != 0) //checando e somando numeros impares
+                else if (numero > 0 && numero < 1001 && numero % 2 != 0) //checando e somando numeros impares
                 {
                     numeroImpar += numero;
                 }               
@@ -31,8 +31,8 @@ namespace Aula2703___Lista_Exercicios_2
 
             } while (numero > 0 && numero <= 1000); //condição
 
-            Console.WriteLine("A soma dos pares é: " + (numeroPar += numero));
-            Console.WriteLine("A soma dos impares é: " + (numeroImpar += numero));
+            Console.WriteLine("A soma dos pares é: " + (numeroPar));
+            Console.WriteLine("A soma dos impares é: " + (numeroImpar));
 
 
 
