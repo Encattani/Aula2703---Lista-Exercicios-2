@@ -26,18 +26,7 @@ namespace Aula2703___Lista_Exercicios_2
                 else if (numero % 2 != 0) //checando e somando numeros impares
                 {
                     numeroImpar += numero;
-                }
-
-                else if (numero > 1000) //condição para encerrar o programa
-
-                {
-                    Console.WriteLine("Encerrando.");
-                }
-
-                else if (numero == 0) //condição para encerrar o laço e imprimir as somas
-                {
-                    break;
-                }
+                }               
 
 
             } while (numero > 0 && numero <= 1000); //condição
