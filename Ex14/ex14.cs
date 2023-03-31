@@ -31,12 +31,11 @@
                     Console.WriteLine();
                     Console.WriteLine($"A velocidade em km/h é: {velocidade / 3.6} ");
                 }
-
-                
+                                              
 
             } while (escolha == 1 || escolha == 2);
 
-            Console.WriteLine();
+            Console.WriteLine("Saindo.");
         }
     }
 }
