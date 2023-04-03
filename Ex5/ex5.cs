@@ -4,18 +4,25 @@
     {
         static void Main(string[] args)
         {
-            int[] listanumeros = new int[15];
+            int numero;
+            int maior = int.MaxValue;
+            int menor = int.MinValue;
 
-            Console.WriteLine(listanumeros.Length);
-
-            foreach (int item in listanumeros)
+            for(int i = 0; i < 15; i++)
             {
-                Console.WriteLine(item + " ");
-            }
-            Console.WriteLine();
 
-            for (int i = 0; ; i < listanumeros.Length; i)
-                { }
+                Console.WriteLine("Insira um numero: ");
+                numero = Convert.ToInt32(Console.ReadLine());
+
+                if (numero > maior)
+                    maior = numero;
+
+                if (numero < menor)
+                    menor = numero;
+
+            }
+
+            Console.WriteLine($"O maior é {maior}, e o menor é {menor}");
         }
     }
 }
